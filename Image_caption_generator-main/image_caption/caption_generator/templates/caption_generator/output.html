@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Caption Generator</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <a class='btn noHover' href="#home">CaptionGenerator</a>
+          </div>
+    </header>
+    <section class="hero-area">
+        <!-- Preloader -->
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="circle-preloader">
+                <div class="a" style="--n: 5;">
+                    <div class="dot" style="--i: 0;"></div>
+                    <div class="dot" style="--i: 1;"></div>
+                    <div class="dot" style="--i: 2;"></div>
+                    <div class="dot" style="--i: 3;"></div>
+                    <div class="dot" style="--i: 4;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-post-slides owl-carousel">
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post d-flex flex-wrap">
+                <!-- Post Thumbnail -->
+                <div class="slide-post-thumbnail h-100 bg-img" style="background-image: url({% static 'img/blog-img/test.jpg' %});"></div>
+                <!-- Post Content -->
+                <div class="slide-post-content h-100 d-flex align-items-center">
+                    <div class="slide-post-text">
+                        
+                        <a href="#" class="post-title" data-animation="fadeIn" data-delay="300ms">
+                            <h2>We’ve Launched More May Gal Meets Glam Collection Dresses</h2>
+                        </a>
+                        <!-- <a href="#" class="btn center-btn" data-animation="fadeIn" data-delay="700ms">Try another</a> -->
+                                            <div class="upload-btn">
+							Upload
+							<input type="file" name="file"/>
+						</div>
+                    </div>
+
+                    <!-- Page Count -->
+                    <div class="page-count"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'js/active.js' %}"></script>
+</body>
+
+</html>
